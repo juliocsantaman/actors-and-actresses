@@ -97,3 +97,12 @@ aside {
   color: #FFFFFF;
 }
 /* Style end of aside */
+
+/* Styles of footer */
+footer {
+  grid-area: footer;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 15px;
+}
+/* Style end of footer */
