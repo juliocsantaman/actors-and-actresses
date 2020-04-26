@@ -1,10 +1,22 @@
 /* Extra small devices (portrait phones, less than 576px)
   No media query for `xs` since this is the default in Bootstrap */
 
-/* Small devices (landscape phones, 576px and up) */
+/*
+=====================================================
+
+Small devices (landscape phones, 576px and up)
+
+=====================================================
+*/
 @media (min-width: 576px) { }
 
-/* Medium devices (tablets, 768px and up) */
+/*
+=====================================================
+
+Medium devices (tablets, 768px and up)
+
+=====================================================
+*/
 @media (min-width: 768px) { 
   .container {
     display: grid;
@@ -16,13 +28,7 @@
                           "footer footer footer";
   
   }
-
-  /* Style start of main */
-  main {
-    height: 100%;
-  }
-  /* Style end of main */
-
+  
   /* Style start of aside */
   aside {
     margin: 15px;
@@ -34,20 +40,14 @@
   }
   /* Style end of aside */
 }
+/*
+=====================================================
 
-/* Large devices (desktops, 992px and up) */
+Large devices (desktops, 992px and up) 
+
+=====================================================
+*/
 @media (min-width: 992px) {
-  .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto auto auto auto;
-    grid-template-areas: "header header header"
-                          "nav nav nav"
-                          "main main aside"
-                          "footer footer footer";
-  
-  }
-
   /* Style start of header */
   header h1 {
     padding: 100px;
@@ -55,10 +55,15 @@
   }
   /* Style end of header */
 
+  /* Style start of nav */
+  nav ul li a {
+    font-size: 16px;
+  }
+  /* Style end of nav */
+
   /* Style start of main */
   main {
     max-width: 1000px;
-    height: auto;
   }
 
   main div {
@@ -73,5 +78,11 @@
   /* Style end of main */
 }
 
-/* Extra large devices (large desktops, 1200px and up) */
+/*
+=====================================================
+
+Extra large devices (large desktops, 1200px and up)
+
+=====================================================
+*/
 @media (min-width: 1200px) { }
