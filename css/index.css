@@ -6,28 +6,29 @@
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto auto auto auto;
+  grid-template-rows: auto auto auto auto auto;
   grid-template-areas: "header header header"
                         "nav nav nav"
-                        "main main aside"
+                        "main main main"
+                        "aside aside aside"
                         "footer footer footer";
 
 }
 
-/* Styles of header */
+/* Style start of header */
 header {
   grid-area: header;
 }
 
 header h1 {
   text-align: center;
-  padding: 100px;
-  font-size: 60px;
+  padding: 50px;
+  font-size: 25px;
   color: #FFFFFF;
 }
 /* Style end of header */
 
-/* Style of nav */
+/* Style start of nav */
 nav {
   padding: 10px;
   grid-area: nav;
@@ -51,21 +52,22 @@ nav ul li a:hover {
 nav  ul li {
   margin: 0 15px 0 15px;
 }
-/* Style end of nav
+/* Style end of nav */
 
-/* Styles of main */
+/* Style start of main */
 main {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  max-width: 1000px;
+  justify-content: center;
+  max-width: 500px;
   grid-area: main;
 }
 
 main div {
-  height: 400px;
+  height: 200px;
   background: #F5F5F5;
-  width: 400px;
+  width: 200px;
   margin: 15px;
   border: 2px solid #BDBDBD;
   border-radius: 10px;
@@ -80,29 +82,31 @@ main div h3 {
 }
 
 main div img {
-  height: 300px;
-  width: 250px;
+  height: 140px;
+  width: 120px;
   border-radius: 10px;
 }
 /* Style end of main */
 
-/* Styles of aside */
+/* Style start of aside */
 aside {
   grid-area: aside;
-  margin: 15px;
-  border-radius: 10px; 
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+aside h3 {
   color: #FFFFFF;
 }
 /* Style end of aside */
 
-/* Styles of footer */
+/* Style start of footer */
 footer {
   grid-area: footer;
   color: #FFFFFF;
   text-align: center;
-  padding: 15px;
+  padding: 8px;
 }
 /* Style end of footer */
