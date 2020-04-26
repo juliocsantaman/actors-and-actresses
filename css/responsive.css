@@ -76,6 +76,12 @@ Large devices (desktops, 992px and up)
     width: 250px;
   }
   /* Style end of main */
+
+  /* Style start of footer */
+  footer {
+    padding: 30px;
+  }
+  /* Style end of footer */
 }
 
 /*
